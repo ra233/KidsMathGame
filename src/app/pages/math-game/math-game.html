@@ -1,0 +1,32 @@
+<h1>🎯 Kids Math Practice Game</h1>
+
+<div class="controls">
+  <label>
+    Level:
+    <select [(ngModel)]="level">
+      <option value="easy">Easy</option>
+      <option value="medium">Medium</option>
+      <option value="hard">Hard</option>
+    </select>
+  </label>
+  <button (click)="startGame()">🔁 Restart</button>
+</div>
+
+<div class="status">
+  <strong>Score:</strong> {{ score }} |
+  <strong>Time:</strong> {{ timeLeft }}s
+</div>
+
+<div *ngIf="timeLeft > 0; else gameOver" class="game">
+  <div class="question">
+    <strong>What is {{ a }} {{ operator }} {{ b }}?</strong>
+  </div>
+  <input type="number" [(ngModel)]="answer" (keyup.enter)="checkAnswer()" />
+  <button (click)="checkAnswer()">✅ Check</button>
+  <div class="feedback">{{ feedback }}</div>
+</div>
+
+<ng-template #gameOver>
+  <h2>⏰ Time’s Up!</h2>
+  <p>🎉 Final Score: {{ score }}</p>
+</ng-template>

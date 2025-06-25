@@ -1,0 +1,46 @@
+:host {
+  display: block;
+  max-width: 400px;
+  margin: auto;
+  padding: 1rem;
+  font-family: 'Comic Sans MS', sans-serif;
+  background: #f0f8ff;
+  border: 2px solid #87ceeb;
+  border-radius: 10px;
+
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+
+  .controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+  }
+
+  .status {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+  }
+
+  .game {
+    .question {
+      font-size: 1.2rem;
+      margin-bottom: 0.5rem;
+    }
+
+    input {
+      padding: 0.4rem;
+      width: 80px;
+      font-size: 1rem;
+      margin-right: 0.5rem;
+    }
+
+    .feedback {
+      height: 1.5rem;
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+  }
+}
