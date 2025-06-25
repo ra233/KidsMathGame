@@ -56,4 +56,15 @@ Angular CLI does not come with an end-to-end testing framework by default. You c
 
 ## Additional Resources
 
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+:
+
+🧠 Kids Math Practice Game
+A fun and educational Math Practice Game built with Angular 18+ for kids to improve their arithmetic skills! It features:
+
+➕ Random Addition
+➖ Subtraction
+✖️ Multiplication
+⏱️ Countdown Timer
+🎯 Scoring System
+🎚️ Easy / Medium / Hard difficulty levels
+
